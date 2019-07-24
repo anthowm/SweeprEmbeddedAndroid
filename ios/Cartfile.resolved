@@ -1,0 +1,5 @@
+github "Alamofire/Alamofire" "4.8.2"
+github "radex/SwiftyTimer" "2.0.0"
+github "realm/realm-cocoa" "v3.16.2"
+github "robbiehanson/CocoaAsyncSocket" "b179ea4013e94e31e6e637955e520ea4fb9d1b13"
+github "yahoojapan/SwiftyXMLParser" "4.1.0"

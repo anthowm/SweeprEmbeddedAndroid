@@ -1,0 +1,38 @@
+{
+  "lastSeen": "Active",
+  "warranty": "Warranty",
+  "manufacturer": "Manufacturer",
+  "faq": "FAQ/Help",
+  "issue-clarification": {
+    "ISSUE_CLARIFICATION_REQUEST":"Which issue are you referring to?",
+    "SERVICE_CLARIFICATION_REQUEST":"Which service are you referring to?",
+    "DEVICE_CLARIFICATION_REQUEST":"What device did you mean?",
+    "DEVICE_CLARIFICATION_REQUEST_ALT":"Is this the device?"
+  },
+  "speed-test": {
+    "result": {
+      "SPEED_TEST_SLOW": "Somethings not quite right.",
+      "SPEED_TEST_MEDIUM": "Looking ok.",
+      "SPEED_TEST_FAST": "Everything is looking good!",
+      "SPEED_TEST_NO_INTERNET": "Could not read network speed.",
+      "DEFAULT": "Speed test failed."
+    },
+    "activity-label": {
+      "SPEED_TEST_REQUESTED": "Testing network speed...",
+      "SPEED_TEST_FAILED": "No Internet.",
+      "SPEED_TEST_SUCCEEDED": "Finished Estimating."
+    }
+  },
+  "ping-test": {
+    "result": {},
+    "activity-label": {
+      "PING_TEST_REQUESTED": "Testing Gaming Speed..."
+    }
+  },
+  "service": {
+    "minimumBandwidth": "Minimum Bandwidth",
+    "name": "Service Name",
+    "lastStatusCheck": "Last Check of Status",
+    "social": "Social"
+  }
+}

@@ -1,0 +1,29 @@
+include ':app'
+include ':react-native-vector-icons'
+project(':react-native-vector-icons').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-vector-icons/android')
+include ':@react-native-community_netinfo'
+project(':@react-native-community_netinfo').projectDir = new File(rootProject.projectDir, '../node_modules/@react-native-community/netinfo/android')
+include ':@react-native-community_async-storage'
+project(':@react-native-community_async-storage').projectDir = new File(rootProject.projectDir, '../node_modules/@react-native-community/async-storage/android')
+include ':react-native-push-notification'
+project(':react-native-push-notification').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-push-notification/android')
+include ':react-native-voice-sweepr'
+project(':react-native-voice-sweepr').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-voice-sweepr/android')
+include ':react-native-svg'
+project(':react-native-svg').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-svg/android')
+include ':react-native-gesture-handler'
+project(':react-native-gesture-handler').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-gesture-handler/android')
+include ':react-native-config'
+project(':react-native-config').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-config/android')
+include ':react-native-call-detection'
+project(':react-native-call-detection').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-call-detection/android')
+include ':react-native-sweepr-scan'
+project(':react-native-sweepr-scan').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-sweepr-scan/android')
+include ':react-native-sweepr-resolution'
+project(':react-native-sweepr-resolution').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-sweepr-resolution/android')
+include ':react-native-sweepr-cloud'
+project(':react-native-sweepr-cloud').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-sweepr-cloud/android')
+include ':react-native-ping-test'
+project(':react-native-ping-test').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-ping-test/android')
+
+

@@ -1,0 +1,63 @@
+apply plugin: 'com.android.application'
+apply plugin: 'realm-android'
+apply from: project(':react-native-config').projectDir.getPath() + "/dotenv.gradle"
+android {
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.rosebud.reacttest"
+        minSdkVersion 23
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation project(':react-native-vector-icons')
+    implementation project(':@react-native-community_netinfo')
+    implementation project(':@react-native-community_async-storage')
+    implementation project(':react-native-push-notification')
+    implementation project(':react-native-voice-sweepr')
+    implementation project(':react-native-svg')
+    implementation project(':react-native-gesture-handler')
+    implementation project(':react-native-config')
+    implementation project(':react-native-call-detection')
+    implementation project(':react-native-sweepr-scan')
+    implementation project(':react-native-sweepr-resolution')
+    implementation project(':react-native-sweepr-cloud')
+    implementation project(':react-native-ping-test')
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.0.0'
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test:runner:1.1.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0'
+    implementation "com.facebook.react:react-native:0.59.3"
+    implementation 'com.google.code.gson:gson:2.8.5'
+    implementation 'com.github.andriydruk:dnssd:0.9.13'
+    implementation 'io.swagger:swagger-annotations:1.5.17'
+    implementation 'com.squareup.okhttp:okhttp:2.7.5'
+    implementation 'com.squareup.okhttp:logging-interceptor:2.7.5'
+    implementation 'io.gsonfire:gson-fire:1.8.0'
+    implementation 'org.threeten:threetenbp:1.3.5'
+    implementation 'com.github.rosebud-iot:upnpdiscovery:1.0.5'
+    implementation 'com.github.andriydruk:dnssd:0.9.13'
+    implementation 'com.github.stealthcopter:AndroidNetworkTools:0.4.3'
+    implementation 'org.eclipse.paho:org.eclipse.paho.client.mqttv3:1.1.0'
+    implementation 'org.eclipse.paho:org.eclipse.paho.android.service:1.1.1'
+    implementation 'jcifs:jcifs:1.3.17'
+    implementation 'com.github.rosebud-iot:sweepr-android-mobile-framework:0.1.1'
+    implementation 'com.github.rosebud-iot:sweepr-backendapi:0.1.2'
+}

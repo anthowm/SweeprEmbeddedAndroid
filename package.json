@@ -1,0 +1,97 @@
+{
+  "name": "SWEEPR",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "BABEL_ENV=test jest --coverage --setupFilesAfterEnv ./specSetup.js",
+    "api": "node ./APIMock/server.js",
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "complete-installx": "npm i && npm run link-sweepr ; npm run link-thirdparty ; npx jetify",
+    "complete-install": "npm i && npx jetify ; npm run link-sweepr ; npm run link-thirdparty ",
+    "link-sweepr": "npm run link-ping-test ; npm run link-sweepr-cloud ; npm run link-sweepr-resolution ; npm run link-sweepr-scan;",
+    "link-thirdparty": "npm run link-call-detection ; npm run link-config ; npm run link-gesture-handler ; npm run link-svg ; npm run link-voice-sweepr ; npm run link-push-notification ; npm run link-push-async-storage ; npm run link-push-net-info; npm run link-vector-icons",
+    "link-ping-test": "react-native link react-native-ping-test",
+    "link-sweepr-cloud": "react-native link react-native-sweepr-cloud",
+    "link-sweepr-resolution": "react-native link react-native-sweepr-resolution",
+    "link-sweepr-scan": "react-native link react-native-sweepr-scan",
+    "link-call-detection": "react-native link react-native-call-detection",
+    "link-config": "react-native link react-native-config",
+    "link-gesture-handler": "react-native link react-native-gesture-handler",
+    "link-svg": "react-native link react-native-svg",
+    "link-voice-sweepr": "react-native link react-native-voice-sweepr",
+    "link-vector-icons": "react-native link react-native-vector-icons",
+    "link-push-notification": "react-native link react-native-push-notification",
+    "link-push-async-storage": "react-native link @react-native-community/async-storage",
+    "link-push-net-info": "react-native link @react-native-community/netinfo"
+  },
+  "dependencies": {
+    "@babel/core": "^7.0.0",
+    "@babel/preset-react": "^7.0.0",
+    "@react-native-community/async-storage": "^1.2.2",
+    "@react-native-community/netinfo": "^2.0.0",
+    "apsl-react-native-button": "^3.1.1",
+    "axios": "^0.18.0",
+    "moment": "2.24.0",
+    "npm": "^6.4.1",
+    "react": "16.8.3",
+    "react-jsx-parser": "^1.15.1",
+    "react-native": "0.59.3",
+    "react-native-call-detection": "^1.6.4",
+    "react-native-config": "^0.11.5",
+    "react-native-gesture-handler": "1.1.0",
+    "react-native-keyboard-aware-scroll-view": "^0.8.0",
+    "react-native-ping-test": "^1.0.0",
+    "react-native-progress": "^3.6.0",
+    "react-native-push-notification": "^3.1.3",
+    "react-native-render-html": "^4.1.2",
+    "react-native-svg": "^9.4.0",
+    "react-native-svg-uri": "^1.2.3",
+    "react-native-sweepr-cloud": "^1.0.0",
+    "react-native-sweepr-resolution": "^1.0.2",
+    "react-native-sweepr-scan": "^1.0.1",
+    "react-native-vector-icons": "^4.6.0",
+    "react-native-voice-sweepr": "^0.2.7",
+    "react-navigation": "^2.18.3",
+    "react-redux": "^6.0.1",
+    "redux": "^4.0.1",
+    "redux-saga": "^1.0.2",
+    "tcomb-form-native": "^0.6.20",
+    "zxcvbn": "^4.4.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.4",
+    "@babel/plugin-proposal-class-properties": "^7.4.0",
+    "@babel/preset-flow": "^7.0.0",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^23.4.2",
+    "babel-plugin-module-resolver": "^3.2.0",
+    "babel-preset-react-native": "^4.0.1",
+    "enzyme": "3.9.0",
+    "enzyme-adapter-react-16": "^1.11.2",
+    "jest": "24.7.1",
+    "jest-enzyme": "^7.0.2",
+    "jest-react-native": "^18.0.0",
+    "jetifier": "^1.6.2",
+    "json-server": "^0.12.2",
+    "metro-react-native-babel-preset": "^0.53.1",
+    "react-dom": "16.8.6",
+    "react-test-renderer": "16.8.6",
+    "sinon": "7.3.1"
+  },
+  "rnpm": {
+    "assets": [
+      "./assets/fonts/"
+    ]
+  },
+  "jest": {
+    "preset": "react-native",
+    "transform": {
+      "^.+\\.js$": "<rootDir>/node_modules/react-native/jest/preprocessor.js"
+    },
+    "coveragePathIgnorePatterns": [
+      "/node_modules/"
+    ]
+  }
+}
